@@ -18,23 +18,29 @@
     End Sub
 
     Private Sub addButton_Click(sender As Object, e As EventArgs) Handles addButton.Click
-        If String.IsNullOrWhiteSpace(fnTextBox.Text) OrElse Not IsNumeric(fnTextBox.Text) Then
-            MessageBox.Show("Please enter a valid number for First Number", "Invalid Input")
-            Return
-        End If
+        Try
+            If String.IsNullOrWhiteSpace(fnTextBox.Text) OrElse Not IsNumeric(fnTextBox.Text) Then
+                MessageBox.Show("Please enter a valid number for First Number", "Invalid Input")
+                Return
+            End If
 
-        If String.IsNullOrWhiteSpace(snTextBox.Text) OrElse Not IsNumeric(snTextBox.Text) Then
-            MessageBox.Show("Please enter a valid number for Second Number", "Invalid Input")
-            Return
-        End If
+            If String.IsNullOrWhiteSpace(snTextBox.Text) OrElse Not IsNumeric(snTextBox.Text) Then
+                MessageBox.Show("Please enter a valid number for Second Number", "Invalid Input")
+                Return
+            End If
 
-        ' Both inputs are valid numeric values, so proceed with calculation
-        Dim firstNumber As Double = Double.Parse(fnTextBox.Text)
-        Dim secondNumber As Double = Double.Parse(snTextBox.Text)
-        Dim result As Double = firstNumber + secondNumber
+            ' Both inputs are valid numeric values, so proceed with calculation
+            Dim firstNumber As Double = Double.Parse(fnTextBox.Text)
+            Dim secondNumber As Double = Double.Parse(snTextBox.Text)
+            Dim result As Double = firstNumber + secondNumber
 
-        ' Display the result in ansTextBox
-        ansTextBox.Text = result.ToString()
+            ' Display the result in ansTextBox
+            ansTextBox.Text = result.ToString()
+        Catch ex As Exception
+            MessageBox()
+
+        End Try
+
     End Sub
 
 
