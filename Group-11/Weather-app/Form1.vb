@@ -61,7 +61,7 @@ Public Class frmWeather
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         ' Input Validation: Allow only alphabetic characters
         If Not System.Text.RegularExpressions.Regex.IsMatch(TextBox1.Text, "^[a-zA-Z\s]+$") Then
-            MessageBox.Show("Please enter only alphabetic characters.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Please enter a valid city or town name.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             TextBox1.Text = ""
         End If
     End Sub
@@ -79,6 +79,10 @@ Public Class frmWeather
     End Sub
 
     Private Sub lblStatus_TextChanged(sender As Object, e As EventArgs) Handles lblStatus.TextChanged
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

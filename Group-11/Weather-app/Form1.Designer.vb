@@ -44,10 +44,11 @@ Partial Class frmWeather
         Me.GroupBox1.BackColor = System.Drawing.Color.Teal
         Me.GroupBox1.Controls.Add(Me.btnGo)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(188, 75)
+        Me.GroupBox1.Location = New System.Drawing.Point(371, 91)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(641, 128)
+        Me.GroupBox1.Size = New System.Drawing.Size(660, 126)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Enter City or Town "
@@ -75,8 +76,8 @@ Partial Class frmWeather
         '
         Me.lblStatus.BackColor = System.Drawing.Color.MediumAquamarine
         Me.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lblStatus.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.Location = New System.Drawing.Point(399, 223)
+        Me.lblStatus.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.Location = New System.Drawing.Point(594, 241)
         Me.lblStatus.Multiline = True
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.ReadOnly = True
@@ -87,7 +88,7 @@ Partial Class frmWeather
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(448, 291)
+        Me.PictureBox1.Location = New System.Drawing.Point(614, 291)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(139, 110)
         Me.PictureBox1.TabIndex = 2
@@ -97,12 +98,12 @@ Partial Class frmWeather
         '
         Me.lblTemparature.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lblTemparature.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lblTemparature.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTemparature.Location = New System.Drawing.Point(188, 429)
+        Me.lblTemparature.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTemparature.Location = New System.Drawing.Point(371, 417)
         Me.lblTemparature.Multiline = True
         Me.lblTemparature.Name = "lblTemparature"
         Me.lblTemparature.ReadOnly = True
-        Me.lblTemparature.Size = New System.Drawing.Size(641, 26)
+        Me.lblTemparature.Size = New System.Drawing.Size(650, 41)
         Me.lblTemparature.TabIndex = 3
         Me.lblTemparature.Text = "O"
         Me.lblTemparature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -111,18 +112,19 @@ Partial Class frmWeather
         '
         Me.lblCity.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lblCity.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lblCity.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCity.Location = New System.Drawing.Point(188, 545)
+        Me.lblCity.Font = New System.Drawing.Font("Lucida Calligraphy", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCity.Location = New System.Drawing.Point(371, 542)
+        Me.lblCity.Multiline = True
         Me.lblCity.Name = "lblCity"
         Me.lblCity.ReadOnly = True
-        Me.lblCity.Size = New System.Drawing.Size(641, 30)
+        Me.lblCity.Size = New System.Drawing.Size(650, 48)
         Me.lblCity.TabIndex = 4
         Me.lblCity.Text = "Loading...."
         Me.lblCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(197, 291)
+        Me.WebBrowser1.Location = New System.Drawing.Point(371, 303)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(131, 98)
@@ -141,22 +143,24 @@ Partial Class frmWeather
         '
         Me.lblDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lblDescription.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescription.Location = New System.Drawing.Point(188, 477)
+        Me.lblDescription.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDescription.Location = New System.Drawing.Point(371, 481)
+        Me.lblDescription.Multiline = True
         Me.lblDescription.Name = "lblDescription"
         Me.lblDescription.ReadOnly = True
-        Me.lblDescription.Size = New System.Drawing.Size(641, 30)
+        Me.lblDescription.Size = New System.Drawing.Size(650, 45)
         Me.lblDescription.TabIndex = 6
         Me.lblDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.BackColor = System.Drawing.Color.Black
+        Me.Label1.Font = New System.Drawing.Font("Lucida Calligraphy", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(323, 9)
+        Me.Label1.Location = New System.Drawing.Point(380, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(525, 36)
+        Me.Label1.Size = New System.Drawing.Size(841, 52)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Weather App Developed by Group-11"
         '
@@ -164,8 +168,9 @@ Partial Class frmWeather
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 27.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(980, 587)
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = Global.Weather_app.My.Resources.Resources.bg3
+        Me.ClientSize = New System.Drawing.Size(1075, 618)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblDescription)
         Me.Controls.Add(Me.WebBrowser1)

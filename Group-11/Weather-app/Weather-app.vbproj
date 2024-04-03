@@ -134,6 +134,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bg.jpg" />
+    <None Include="Resources\bg3.jpg" />
+    <None Include="Resources\bg4.png" />
+    <None Include="Resources\bg5.jpg" />
+    <None Include="Resources\bg2.jpg" />
     <Content Include="Resources\Fog.png" />
     <Content Include="Sunny.jpeg" />
   </ItemGroup>
