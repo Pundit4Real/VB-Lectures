@@ -49,7 +49,7 @@ Partial Class frmWeather
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(371, 91)
+        Me.GroupBox1.Location = New System.Drawing.Point(322, 91)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(660, 126)
         Me.GroupBox1.TabIndex = 0
@@ -81,7 +81,7 @@ Partial Class frmWeather
         Me.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblStatus.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStatus.ForeColor = System.Drawing.Color.White
-        Me.lblStatus.Location = New System.Drawing.Point(594, 234)
+        Me.lblStatus.Location = New System.Drawing.Point(539, 233)
         Me.lblStatus.Multiline = True
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.ReadOnly = True
@@ -92,7 +92,7 @@ Partial Class frmWeather
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(594, 289)
+        Me.PictureBox1.Location = New System.Drawing.Point(539, 301)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(115, 95)
         Me.PictureBox1.TabIndex = 2
@@ -104,7 +104,7 @@ Partial Class frmWeather
         Me.lblTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblTemperature.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTemperature.ForeColor = System.Drawing.Color.White
-        Me.lblTemperature.Location = New System.Drawing.Point(371, 417)
+        Me.lblTemperature.Location = New System.Drawing.Point(322, 417)
         Me.lblTemperature.Multiline = True
         Me.lblTemperature.Name = "lblTemperature"
         Me.lblTemperature.ReadOnly = True
@@ -119,7 +119,7 @@ Partial Class frmWeather
         Me.lblCity.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblCity.Font = New System.Drawing.Font("Lucida Calligraphy", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCity.ForeColor = System.Drawing.Color.White
-        Me.lblCity.Location = New System.Drawing.Point(371, 542)
+        Me.lblCity.Location = New System.Drawing.Point(322, 542)
         Me.lblCity.Multiline = True
         Me.lblCity.Name = "lblCity"
         Me.lblCity.ReadOnly = True
@@ -130,7 +130,7 @@ Partial Class frmWeather
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(389, 301)
+        Me.WebBrowser1.Location = New System.Drawing.Point(322, 301)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(131, 98)
@@ -151,7 +151,7 @@ Partial Class frmWeather
         Me.lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblDescription.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDescription.ForeColor = System.Drawing.Color.White
-        Me.lblDescription.Location = New System.Drawing.Point(371, 481)
+        Me.lblDescription.Location = New System.Drawing.Point(322, 481)
         Me.lblDescription.Multiline = True
         Me.lblDescription.Name = "lblDescription"
         Me.lblDescription.ReadOnly = True
@@ -162,7 +162,7 @@ Partial Class frmWeather
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Lucida Calligraphy", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(380, 9)
@@ -177,7 +177,7 @@ Partial Class frmWeather
         Me.lblHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblHumidity.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHumidity.ForeColor = System.Drawing.Color.White
-        Me.lblHumidity.Location = New System.Drawing.Point(831, 542)
+        Me.lblHumidity.Location = New System.Drawing.Point(782, 542)
         Me.lblHumidity.Multiline = True
         Me.lblHumidity.Name = "lblHumidity"
         Me.lblHumidity.ReadOnly = True
@@ -191,7 +191,7 @@ Partial Class frmWeather
         Me.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblDay.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDay.ForeColor = System.Drawing.Color.White
-        Me.lblDay.Location = New System.Drawing.Point(831, 481)
+        Me.lblDay.Location = New System.Drawing.Point(782, 481)
         Me.lblDay.Multiline = True
         Me.lblDay.Name = "lblDay"
         Me.lblDay.ReadOnly = True
@@ -205,7 +205,7 @@ Partial Class frmWeather
         Me.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lblTime.Font = New System.Drawing.Font("Lucida Calligraphy", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTime.ForeColor = System.Drawing.Color.White
-        Me.lblTime.Location = New System.Drawing.Point(831, 417)
+        Me.lblTime.Location = New System.Drawing.Point(782, 417)
         Me.lblTime.Multiline = True
         Me.lblTime.Name = "lblTime"
         Me.lblTime.ReadOnly = True

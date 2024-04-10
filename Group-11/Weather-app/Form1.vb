@@ -97,7 +97,7 @@ Public Class frmWeather
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         ' Input Validation: Allow only alphabetic characters
-        If Not System.Text.RegularExpressions.Regex.IsMatch(TextBox1.Text, "^[a-zA-Z\s]+$") Then
+        If Not System.Text.RegularExpressions.Regex.IsMatch(TextBox1.Text, "^[a-zA-Z\s\-]*$") Then
             MessageBox.Show("Please enter a valid city or town name.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             TextBox1.Text = ""
         End If
@@ -122,4 +122,6 @@ Public Class frmWeather
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
         ' Add code to handle GroupBox1 enter event here, if needed
     End Sub
+
+
 End Class
